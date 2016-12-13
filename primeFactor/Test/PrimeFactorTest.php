@@ -38,4 +38,11 @@ class PrimeFactorTest extends \PHPUnit_Framework_TestCase {
       $this->assertEquals($expected, $actual);
     }
 
+    public function test5DecomposeCompositeDivBy3(){
+      $expected = [3,11];
+      $actual = $this->primeFactor->decompose(33);
+
+      $this->assertEquals($expected, $actual);
+    }
+
 }
