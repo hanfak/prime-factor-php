@@ -24,4 +24,11 @@ class PrimeFactorTest extends \PHPUnit_Framework_TestCase {
       $this->assertEquals($expected, $actual);
     }
 
+    public function test3DecompositionOf6() {
+      $expected = [2,3];
+      $actual = $this->primeFactor->decompose(6);
+
+      $this->assertEquals($expected, $actual);
+    }
+
 }
