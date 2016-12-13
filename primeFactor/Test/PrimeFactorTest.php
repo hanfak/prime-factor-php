@@ -31,4 +31,11 @@ class PrimeFactorTest extends \PHPUnit_Framework_TestCase {
       $this->assertEquals($expected, $actual);
     }
 
+    public function test4DecomposeUniqueComposite(){
+      $expected = [2,7];
+      $actual = $this->primeFactor->decompose(14);
+
+      $this->assertEquals($expected, $actual);
+    }
+
 }
